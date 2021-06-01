@@ -2,8 +2,8 @@
 module.exports = {
   title: 'Mudmap Documentation',
   tagline: 'Management made easy',
-  url: 'https://mudmap.io/',
-  // url: 'https://mudmap-documentation.onrender.com/',
+  // url: 'https://mudmap.io/',
+  url: 'https://docs-2sce.onrender.com/',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -21,10 +21,6 @@ module.exports = {
       },
       items: [
         {
-          // type: 'doc',
-          // docId: 'intro',
-          // position: 'left',
-          // label: 'Docs',
           href: '/',
           label: "Docs",
           position: "left",
