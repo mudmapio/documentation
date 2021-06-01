@@ -4,8 +4,8 @@ module.exports = {
   tagline: 'Management made easy',
   // url: 'https://mudmap.io/',
   url: 'https://docs-2sce.onrender.com/',
-  baseUrl: '/docs/',
-  // baseUrl: '/',
+  // baseUrl: '/docs/', # fails
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -51,7 +51,8 @@ module.exports = {
             },
             {
               label: 'Read the Documentation',
-              to: '/docs/',
+              to: '/',
+              // to: '/docs/', # fails
             },
           ],
         },
