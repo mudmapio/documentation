@@ -1,31 +1,38 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'Mudmap Documentation',
+  tagline: 'Management made easy',
+  url: 'https://mudmap.io/',
+  // url: 'https://mudmap-documentation.onrender.com/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'mudmapio', // Usually your GitHub org/user name.
+  projectName: 'documentation', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Mudmap',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Mudmap',
+        src: 'img/mudmap.png',
+        target: "_self",
+        href: "https://mudmap.io"
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
+          // type: 'doc',
+          // docId: 'intro',
+          // position: 'left',
+          // label: 'Docs',
+          href: '/',
+          label: "Docs",
+          position: "left",
+          target: "_self",
+          activeBasePath: "/docs"
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/mudmapio/documentation',
           label: 'GitHub',
           position: 'right',
         },
@@ -35,11 +42,19 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Study',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: "About Mudmap",
+              to: "https://mudmap.io/about"
+            },
+            {
+              label: 'Read the Blog',
+              to: 'https://mudmap.io/blog',
+            },
+            {
+              label: 'Read the Documentation',
+              to: '/docs/',
             },
           ],
         },
@@ -47,34 +62,34 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/mudmapio/documentation',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/mudmapio',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Explore',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: "Feedback",
+              to: "https://github.com/mudmapio/public-interactions/issues"
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "Found a Security Issue?",
+              href: "https://github.com/mudmapio/public-interactions/blob/main/SECURITY.md"
             },
+            {
+              label: "Want a Demo?",
+              to: "mailto:dan@mudmap.io"
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Mudmap. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -82,16 +97,11 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/mudmapio/documentation/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
