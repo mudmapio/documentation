@@ -15,7 +15,7 @@ module.exports = {
       title: 'Mudmap',
       logo: {
         alt: 'Mudmap',
-        src: 'img/mudmap.png',
+        src: 'img/logo.png',
         target: "_self",
         href: "https://mudmap.io"
       },
