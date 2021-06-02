@@ -12,6 +12,11 @@ module.exports = {
   organizationName: 'mudmapio', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
   themeConfig: {
+    colorMode: {disableSwitch: true},
+    // algolia: {
+    //   apiKey: '',
+    //   indexName: ''
+    // },
     navbar: {
       title: 'Mudmap',
       logo: {
