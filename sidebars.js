@@ -32,6 +32,10 @@ module.exports = {
             "payment-summary",
             "user-profile-limitations",
             "paddle-mor",
+        ],
+        "Architecture": [
+            "security",
+            "design",
         ]
 
     }

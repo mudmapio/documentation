@@ -13,7 +13,26 @@ accessible you'll be able to connect to [Mudmap].
 
 ## How it works
 
-TODO
+:::note tl;dr
+Mudmap uses **SSH** to communicate with your device. Each firewall will 
+need to have SSH publicly facing. The rest of this page describe how to do 
+set this up. 
+:::
+
+Mudmap installs a [package] on each firewall which provides programmatic 
+access to functionality typically only reserved for the graphical user 
+interface. The package allows you to conduct your firewall management tasks 
+via Mudmap's user interface. This is achieved through the installed package 
+which provides an Application Programmable Interface (API) for Mudmap to 
+connect to. Using the API, Mudmap is able to make requests over the 
+internet to trigger activity on the end device. 
+
+Understandably, we do not want to expose our security devices to the internet
+over HTTP protocols. This is why Mudmap uses Secure Shell (SSH) as its 
+communication channel. SSH is a mature and convenient way to pass 
+information over the internet with high security confidence. It is also 
+only one layer of Mudmap's security onion. To read more about the inner 
+workings and security in depth approach please read the [security] page.
 
 ## SSH setup in pfSense
 
@@ -161,3 +180,5 @@ to discuss other options such as:
 [openvpn]: https://openvpn.net
 [ssh-video]: https://www.youtube.com/watch?v=MVoe3mX_UZQ&ab_channel=LawrenceSystems
 [remote-video]: https://www.youtube.com/watch?v=PgielyUFGeQ&ab_channel=LawrenceSystems
+[security]: https://docs.mudmap.io/security
+[package]: https://github.com/jaredhendrickson13/pfsense-api
