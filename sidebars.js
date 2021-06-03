@@ -28,9 +28,8 @@ module.exports = {
             "detail-view-dashboard",
         ],
         "User Profile": [
-            "user-profile-at-a-glance",
+            "user-profile-overview",
             "payment-summary",
-            "user-profile-limitations",
             "paddle-mor",
         ],
         "Architecture": [
