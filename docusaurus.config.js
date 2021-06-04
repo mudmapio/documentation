@@ -11,16 +11,15 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'mudmapio', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
-  themeConfig: {
-    colorMode: {disableSwitch: true},
-    // scripts: [{src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'yourdomain.com'}],
-    scripts: [
+  scripts: [
       {src: "https://plausible.io/js/plausible.js",
         // async: true,
         defer: true,
         'data-domain': 'docs.mudmap.io'
       }
     ],
+  themeConfig: {
+    colorMode: {disableSwitch: true},
     algolia: {
       apiKey: 'bc5db1742d629962f685dadf0bc4fde2',
       indexName: 'mudmap'
