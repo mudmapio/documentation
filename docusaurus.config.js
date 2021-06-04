@@ -13,6 +13,7 @@ module.exports = {
   projectName: 'documentation', // Usually your repo name.
   themeConfig: {
     colorMode: {disableSwitch: true},
+    // scripts: [{src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'yourdomain.com'}],
     scripts: [
       {src: "https://plausible.io/js/plausible.js",
         async: true,
@@ -20,10 +21,10 @@ module.exports = {
         'data-domain': 'docs.mudmap.io'
       }
     ],
-    // algolia: {
-    //   apiKey: '',
-    //   indexName: ''
-    // },
+    algolia: {
+      apiKey: 'bc5db1742d629962f685dadf0bc4fde2',
+      indexName: 'mudmap'
+    },
     navbar: {
       title: 'Mudmap',
       logo: {
