@@ -16,7 +16,7 @@ module.exports = {
     // scripts: [{src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'yourdomain.com'}],
     scripts: [
       {src: "https://plausible.io/js/plausible.js",
-        async: true,
+        // async: true,
         defer: true,
         'data-domain': 'docs.mudmap.io'
       }
