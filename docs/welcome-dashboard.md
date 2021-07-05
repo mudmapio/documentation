@@ -1,5 +1,6 @@
 ---
 slug: "Introduction-to-the-Dashboard"
+Title: "Introduction to the Dashboard"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
