@@ -34,7 +34,7 @@ will show up in the table like the image below.
 
 ## Activation
 
-To start the activation process is simple just click the <Highlight color="#cf51de">activate</Highlight> button 
+To start the activation process is simple just click the <Highlight color="#4f46e5">activate</Highlight> button 
 
 Next, you will be prompted to enter the devices `root` password. The pop up will look something 
 like this. 
@@ -89,19 +89,19 @@ it can be disabled.
 
 ## Update
 
-To update a devices details click the <Highlight color="#2579f7">update</Highlight> button 
+To update a devices details click the <Highlight color="#d97706">update</Highlight> button 
 
 Entering wrong information, such as an incorrect IP address will result in a connection failure. 
 This can be amended here.
 
-Clicking <Highlight color="#2579f7">update</Highlight> will pop up a new form pre-populated with the current 
+Clicking <Highlight color="#d97706">update</Highlight> will pop up a new form pre-populated with the current 
 information about the firewall. Simply change the required information and submit the form.
 
 Your device will now have the updated data and if correct be ready for activation.
 
 ## Delete
 
-Deleting the device is as simple as clicking the <Highlight color="#f2383b">delete</Highlight> button 
+Deleting the device is as simple as clicking the <Highlight color="#dc2626">delete</Highlight> button 
 
 This will delete the device from the database table inside Mudmap. Deleted devices can be re-registered at anytime. 
 A recap on how to do that can be found at [here][adding].
