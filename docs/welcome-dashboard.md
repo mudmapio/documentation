@@ -16,7 +16,6 @@ export const Highlight = ({children, color}) => (
   </span>
 )
 
-# The Mudmap Dashboard
 
 Mudmap is built to provide with ease of use and improved oversight in mind. After logging in you 
 are dropped into the dashboard. This is the command centre that at glance gives you oversight into
