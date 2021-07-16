@@ -107,7 +107,7 @@ Most options can be left blank. Change the following:
 
 :::note Static IP
 Static IP's for locking down your SSH are:
-**52.33.116.20** and **52.33.116.175** both IP's need to be aliased or 
+**52.33.116.20** and **52.34.188.175** both IP's need to be aliased or 
 individually 
 added. 
 :::
