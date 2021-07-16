@@ -17,25 +17,26 @@ module.exports = {
             "preparing-devices",
             "adding-the-device",
             "registering-devices",
-            "integration-troubleshooting"
+            "integration-troubleshooting",
+            "free-tier"
         ],
         "Dashboard": [
             "welcome-dashboard",
-            "registering-devices-dashboard",
+            // "registering-devices-dashboard",
             "device-list-dashboard"
         ],
-        "Devices in Detail": [
-            "detail-view-dashboard",
-        ],
+        // "Devices in Detail": [
+        //     "detail-view-dashboard",
+        // ],
         "User Profile": [
             "user-profile-overview",
             "payment-summary",
             "paddle-mor",
         ],
-        "Architecture": [
-            "security",
-            "design",
-        ]
+        // "Architecture": [
+        //     "security",
+        //     "design",
+        // ]
 
     }
 };

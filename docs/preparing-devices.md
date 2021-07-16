@@ -96,6 +96,8 @@ This will drop you into the **Firewall > Rules > Edit** page.
 
 Most options can be left blank. Change the following:
 
+- **Source** select *Single host or alias* and either add the individual IP 
+  for Mudmap's servers, or create a [Firewall Alias](#alias)
 - **Destination** click **This firewall (self)**
 - **Destination Port Range** type the port number you're SSH daemon is 
   listening on inside the *Custom* fields for both the *From* and *To* boxes.
@@ -103,11 +105,14 @@ Most options can be left blank. Change the following:
   example, *Mudmap Initial SSH Connection via WAN*. This way we know, once 
   the device and Mudmap are communicating we can delete or disable this rule.
 
-:::note source address
-Mudmap has not yet confirmed the range of IP addresses for this setting. 
-Once done, this section will be updated. However, SSH is a secure protocol 
-and enabling a rule with good source matching is nice but not needed.
+:::note Static IP
+Static IP's for locking down your SSH are:
+**52.33.116.20** and **52.33.116.175** both IP's need to be aliased or 
+individually 
+added. 
 :::
+
+#### Destination 
 
 The **Destination** fields should look similar to the image below. 
 
@@ -116,6 +121,18 @@ The **Destination** fields should look similar to the image below.
 {useBaseUrl
 ('img/preparing-device-ssh-rule-destination.png')} />
 </div>
+
+
+#### Alias
+
+I recommend creating a simple alias list with Mudmap's static IP's.
+
+<div style={{textAlign: 'center'}}>
+<img  alt="Preparing your pfSense firewall - SSH" src={useBaseUrl
+('img/mudmap-ssh-alias-ip.png')} />
+</div>
+
+--- 
 
 Ensure that you click **Save** once complete to register the rule in pfSense.
 
