@@ -18,7 +18,8 @@ module.exports = {
             "adding-the-device",
             "registering-devices",
             "integration-troubleshooting",
-            "free-tier"
+            "free-tier",
+            "pfsense-community-and-plus",
         ],
         "Dashboard": [
             "welcome-dashboard",
